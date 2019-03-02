@@ -58,15 +58,15 @@ df = pd.DataFrame(columns=["image", "label", "writer"])
 #then the path will be parsed for the writer and files in the writer directory (each directory contains multiple samples of each character, digit et c.
 for writer in ["45"]:
     for i in range(1):
-#load image using pillow
-im = Image.open("../by_write/hsf_2/f1000_45/d1000_45/d1000_"+writer+"_000"+"{:02d}".format(i)+".png")
+        #load image using pillow
+        im = Image.open("../by_write/hsf_2/f1000_45/d1000_45/d1000_"+writer+"_000"+"{:02d}".format(i)+".png")
 	#convert the image to 2bit color
         bit2 = im.convert("P", palette=Image.ADAPTIVE, colors=4)
 	#calculate lower res size to use less memory
 	#alternatively we may use numpy.memmap to lazy load images
         x = int(im.width/2)  # 128
         y = int(im.height/2) # 128
-#resize to smaller resolution
+        #resize to smaller resolution
         bit2xy = bit2.resize((x, y), resample=PIL.Image.LANCZOS)
 	#create a numpy array using the pixel data
         arr = np.array(bit2xy.getdata())
