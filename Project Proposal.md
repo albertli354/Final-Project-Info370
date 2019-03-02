@@ -84,7 +84,8 @@ im = Image.open("../by_write/hsf_2/f1000_45/d1000_45/d1000_"+writer+"_000"+"{:02
         df = df.append(row, ignore_index=True)
 
 #show what the DataFrame looks like
-df```
+df
+```
 
 Each value in the `numpy` array represents the gray-scale of the particular pixel on the image. The other important step in preprocessing is the categorization of writers. Since different writers’ images are stored in different folders and there are no labels in the dataset indicating any personal identifying information, we need to add writer label for each row of the data frame. We will parse the filename paths and iterate over directories using python’s built-in os module listdir() function or some other similar built-in method. Ideally, when we’ve completed preprocessing, our dataset’s individual observation contains a writer id label, an array of values indicating the pixels in the corresponding image, and other features we will generate based on analysis of labeled data (e.g. the digit or character they wrote) and the image data itself using ML techniques. 
 
