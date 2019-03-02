@@ -97,7 +97,7 @@ We will then test classification. In this step, various models are used to map t
 
 Finally, we will discuss our results as part of the evaluation of the test set predictions and state conclusions based on statistical test metrics and other results. For future work, we may build up our own model to test the accuracy and facilitate these industries which authenticate and identify the users who use their system or product. It’s also meaningful for the social application. For example, a system can separate different group of age (e.g., teenagers or adults) using a scanner or digital recognizer based on the writing style.
 
-Reference:
+
 
 
 
