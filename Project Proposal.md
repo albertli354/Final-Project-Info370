@@ -2,7 +2,7 @@
 
 ##### INFO 370 Core Methods in Data Science
 
-##### Member info: Member: Katie (Ziqi) Chen, Abert (Xiang) Li, Emily Ding, Kenneth Long
+##### Member info: Member: Katie (Ziqi) Chen, Albert (Xiang) Li, Emily Ding, Kenneth Long
 
 ## Project Overview
 
