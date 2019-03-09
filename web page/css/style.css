@@ -13,9 +13,18 @@
   height: 100%;
 }
 
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.bull_list {
+  font-size: 1.5em;
+}
+
 /* Set black background color, white text and some padding */
 footer {
-
   color: black;
   padding: 15px;
 }

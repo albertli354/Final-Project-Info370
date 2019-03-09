@@ -2,13 +2,15 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Match, Label and Convert Images to csv</title>
-
+<title>Data Process</title>
+<meta name="author" content="Team 27">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-
 <style type="text/css">
     /*!
 *
@@ -21,11 +23,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 body {
   margin: 0;
 }
@@ -13085,7 +13082,7 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="css/style.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13110,6 +13107,20 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+<div class="container-fluid text-center">    
+          <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p class="bull_list"><a href="index.html"><i class="fas fa-home"></i>Home</a></p>
+                <br>
+              <p class="bull_list"><a href="data_process.html">Data Process</a></p>
+              <br>
+              <p class="bull_list"><a href="#">Modeling</a></p>
+              <br>
+              <p class="bull_list"><a href="#">Prediction</a></p>
+              <br>
+              <p class="bull_list"><a href="#">Conclusion</a></p>
+            </div>
+            <div class="col-sm-8 text-left"> 
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13134,11 +13145,12 @@ div#notebook {
 <div class="output_area">
 
     <div class="prompt"></div>
-
-
-
-
 <div class="output_text output_subarea ">
+    <h1>Here's an exmaple what we did for 5 writers</h1>
+    <h4>First step is, create a hash function to avoid the duplicate images which need to retrieve from different folders. Then, we packed these files to be pickle files.
+      After organized all the pickle files, we also process the path into a directory. 
+    </h4>
+    <br>
 <pre>{1551848557: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.01.19_2019_790000.pickle.zip&#39;,
  1551848627: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.03.47_2019_810000.pickle&#39;,
  1551849413: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.16.53_2019_all.pickle&#39;,
@@ -13157,6 +13169,8 @@ div#notebook {
 
 
 <div class="output_markdown rendered_html output_subarea ">
+  <p>Since there are too many images from one writer, we arranged the files as below steps.
+    </p>
 <p>Loading Img Hash Pickle for 2019 processed files</p>
 
 </div>
@@ -13743,6 +13757,12 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
 </div>
     </div>
   </div>
+  </div>
+  </div>
+  </div>
+  <footer class="container-fluid text-center">
+      <p>&copy; Katie (Ziqi) Chen, Albert (Xiang) Li, Emily Ding, Kenneth Long | 2019</p>
+    </footer>
 </body>
 
  
