@@ -111,3 +111,7 @@ Thumbs.db
 # by_write
 .by_write/
 /by_write
+
+# data
+.data/
+/data
