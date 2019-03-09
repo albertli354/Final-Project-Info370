@@ -107,3 +107,7 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# by_write
+.by_write/
+/by_write
