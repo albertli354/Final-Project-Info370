@@ -23,6 +23,19 @@ html {
   font-size: 1.5em;
 }
 
+/* dataframe style */
+table .df {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.df tbody tr, th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 /* Set black background color, white text and some padding */
 footer {
   color: black;
