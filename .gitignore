@@ -114,4 +114,10 @@ Thumbs.db
 
 # data
 .data/
+/data/
 /data
+
+# intermediate
+/data/intermediate/chunking/
+.data/intermediate/chunking/
+.data/intermediate/chunking
