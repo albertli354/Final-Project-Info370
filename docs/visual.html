@@ -55,13 +55,10 @@
         </div>
         
       <hr>
-      <h3>Data Scourse</h3>
-      <p>The dataset we are using is <a href="https://www.nist.gov/srd/nist-special-database-19" title="Database Link" aria-label="link for NIST Special Database 19">NIST Special Database 19</a>. 
-        It consists of 5 zipped files with a total of 3,992,357 images. 
-        The dataset completed by Bethesda High school students and Census Bureau employees in Suitland, Maryland. 
-        Every participant asked to write all alphanumeric characters in a case-sensitive manner. 
-        We will use the dataset classified by author (the <b>by_write</b> organization of the dataset per the description in <a href="https://s3.amazonaws.com/nist-srd/SD19/sd19_users_guide_edition_2.pdf" title="SD19 User Guide Edition 2" aria-label="SD19 User Guide Edition 2">SD19 User Guide Edition 2</a>), 
-        meaning we have the labels that tell us the image belong to different authors. However, all personal identifying information was removed in the dataset.</p>
+      <h3>Tensorflow Modeling Analysis</h3>
+      <p>From the image above, we can see how validation accuracy changed with the number of epoches and number of writers in the dataset. From the data, as the number of writers in the dataset increased, the accuracy score decreased proportionally.</p>
+      <p>a five-writers datset, the validation accuracy could reach at 76% and the train accuracy can even at 90%. However, when the number of writers increased to 30, validation accuracy only decreased to 43% and train accuracy decreased to 81%. As the number of writers increased in the dataset, it is really hard for the model to calculate all the subtle differences. </p> 
+      <p>intersting point is the relationship between the number of epoches and accuracy.Both of the four models experienced a dramatically increase in accuracy from the beginning to the second round. However, for the validation accuracy, the accuracy score seems not changed much, and even experience small decreases when the number of epoches increased (see the image below). For instance, for 10 and 20 writer model, the accracy score decreased in the last epoch.</p>
     </div>
   </div>
 </div>
