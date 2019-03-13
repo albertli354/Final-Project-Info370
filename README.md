@@ -17,6 +17,6 @@ Albert Li | Katie Chen | Emily Ding | Kenneth long
 
 + [fixing_csv_from_previous_chunking](https://github.com/albertli354/Final-Project-Info370/tree/fixing_csv_from_previous_chunking) -- critical part of data processing
 
-+ [fixing_csv_from_previous_chunking](https://github.com/albertli354/Final-Project-Info370/tree/tensorflow) -- ML Modeling: basic neutral networking and convolutional neural network (CNN, or ConvNet).
++ [tensorflow](https://github.com/albertli354/Final-Project-Info370/tree/tensorflow) -- ML Modeling: basic neutral networking and convolutional neural network (CNN, or ConvNet).
 
 - [Raw Data for 100 writers!](https://github.com/albertli354/Final-Project-Info370/tree/fixing_csv_from_previous_chunking/data/intermediate/csvs)
