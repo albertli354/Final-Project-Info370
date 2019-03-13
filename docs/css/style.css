@@ -20,7 +20,7 @@ html {
 }
 
 .bull_list {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* dataframe style */
@@ -49,4 +49,8 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;} 
+
+  img {
+    width: 70%;
+  }
 }
