@@ -13148,8 +13148,43 @@ div#notebook {
 <h3>Conclusion</h3>
 <p>First of all, we have to carefully choose the balance between running speed and accuracy. When the image size increased from 28 * 28 to 64 * 64, we observed a <b>3%</b> 
   increase in the accuracy score, but the running time almost doubled. Even for our small training data with 40,000 image, the increase in time is still considerately high. Another dilemma is the training size. </p>
-  <p>Secondly, the method involved in the modelling can make a big difference. For instance, when only compare the same letter for different models, the model is really good at predicting the authorship. However, when we give 400 images for each writer, the algorithm seems hard to calculate the difference. In the future, we would like to separate the prediction based on a single letter and then combine all the prediction to identify the author. 
+  <p>Secondly, the method involved in the modelling can make a big difference. For instance, when only compare the same letter for different models, the model is really good at predicting the authorship. However, when we give 400 images for each writer, the algorithm seems hard to calculate the difference. </p>
+  
+  <p>Below is an example how we differentiate different writers with their performance. </p>  
+  <div class="output_area">
+
+      <div class="prompt"></div>
+  
+  <div class="output_subarea output_stream output_stdout output_text">
+    
+  <pre>
+
+    Author ID 0000 : K-S D = 0.29649914089347074 p-value=0.00029600221897536656
+
+    Author ID 0001 : K-S D = 0.39871794871794874 p-value=2.125603393134146e-08
+    
+    Author ID 0002 : K-S D = 0.4732060834949474 p-value=2.0072078639186591e-10
+    
+    Author ID 0003 : K-S D = 0.4834408602150537 p-value=1.3565777717688764e-10
+    
+    Author ID 0004 : K-S D = 0.41043344840813195 p-value=6.223625890586029e-06
+    
+    Author ID 0005 : K-S D = 0.42121212121212126 p-value=1.4479523882384366e-07
+    
+    Author ID 0006 : K-S D = 0.32244404113732605 p-value=0.00010774158302194342
+    
+    Author ID 0007 : K-S D = 0.48035043804755945 p-value=9.68145064064899e-10
+    
+    Author ID 0008 : K-S D = 0.28179271708683473 p-value=0.00020588241843005027
+    
+    Author ID 0009 : K-S D = 0.19138755980861244 p-value=0.04987295474230525
+    </pre>    
+    </div>
+    </div>
+    <p>
+    For all of the writers, it appears the p-value means it is very improbable that these two sample distributions are drawn from the same distribution. It is interesting to note that for writer <b>0009</b>, we are just under a p-value of <b>0.05</b>, meaning the distribution of predictions we saw from the MLP is almost within <b>95%</b> of what would have occured by random uniform chance.
     </p>
+
     <h4>Thus, we believe there's a significant difference of handwriting styles between different writers.</h4>
 <h3 id="For-more-information,-please-click-the-Visualization">For more information, please click the <a href="https://albertli354.github.io/Final-Project-Info370/visual.html">Visualization</a><a class="anchor-link" href="#For-more-information,-please-click-the-Visualization">&#182;</a></h3>
 </div>
