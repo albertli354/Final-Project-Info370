@@ -13136,14 +13136,21 @@ div#notebook {
 <h2 id="Result">Result<a class="anchor-link" href="#Result">&#182;</a></h2><p>As we did for linear regression model just only got <strong>35%</strong> accuracy, we used <strong>basic neural network</strong> model for our first machine learning model. After train and test our data, we got <strong>66%</strong> what improved a lot!</p>
 <p>We moved <strong>machine learning models</strong> to get higher score when we trained and tested our data and applied <strong>MLPClassifier</strong> implements a multi-layer perceptron (MLP) algorithm that trains using Backpropagation.</p>
 <p><img src="https://scikit-learn.org/stable/_images/multilayerperceptron_network.png" alt="Dengue transmission" width="300"/></p>
-<p>Then, we used <strong>CNN</strong> in tensorflow environment, and got highest score as <strong>76%</strong>.</p>
-<h3>Thus, We believe <strong>there's a significant difference of handwriting styles between different writers</strong>.</h3>
+<p>Through various models, the highest validation accuracy is <b>75%</b>. We believe we are <b>75%</b> confident using the model to differentiate author’s identity. However, the accuracy should be definitely improved for a practical use. We there there are several issues that are related to the improvement of accuracy.
+  </p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3>Conclusion</h3>
+<p>First of all, we have to carefully choose the balance between running speed and accuracy. When the image size increased from 28 * 28 to 64 * 64, we observed a <b>3%</b> 
+  increase in the accuracy score, but the running time almost doubled. Even for our small training data with 40,000 image, the increase in time is still considerately high. Another dilemma is the training size. </p>
+  <p>Secondly, the method involved in the modelling can make a big difference. For instance, when only compare the same letter for different models, the model is really good at predicting the authorship. However, when we give 400 images for each writer, the algorithm seems hard to calculate the difference. In the future, we would like to separate the prediction based on a single letter and then combine all the prediction to identify the author. 
+    </p>
+    <h4>Thus, we believe there's a significant difference of handwriting styles between different writers.</h4>
 <h3 id="For-more-information,-please-click-the-Visualization">For more information, please click the <a href="https://albertli354.github.io/Final-Project-Info370/visual.html">Visualization</a><a class="anchor-link" href="#For-more-information,-please-click-the-Visualization">&#182;</a></h3>
 </div>
 </div>
