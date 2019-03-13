@@ -23,6 +23,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 body {
   margin: 0;
 }
@@ -13107,98 +13112,183 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
-<div class="container-fluid text-center">    
-          <div class="row content">
-              <div class="col-sm-2 sidenav">
-                  <p class="bull_list"><a href="index.html"><i class="fas fa-home"></i>Home</a></p>
-                  <br>
-                  <p class="bull_list"><a href="data_process.html">Data Process</a></p>
-                  <br>
-                  <p class="bull_list"><a href="stat_model.html">Statistical Model</a></p>
-                  <br>
-                  <p class="bull_list"><a href="ML_model.html">Machine Learning Model</a></p>
-                  <br>
-                  <p class="bull_list"><a href="#">Conclusion</a></p>
-                  <br>
-                </div>
-            <div class="col-sm-8 text-left"> 
+    <div class="container-fluid text-center">    
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p class="bull_list"><a href="index.html"><i class="fas fa-home"></i>Home</a></p>
+                <br>
+                <p class="bull_list"><a href="data_process.html">Data Process</a></p>
+                <br>
+                <p class="bull_list"><a href="stat_model.html">Statistical Model</a></p>
+                <br>
+                <p class="bull_list"><a href="ML_model.html">Machine Learning Model</a></p>
+                <br>
+                <p class="bull_list"><a href="result.html">Conclusion</a></p>
+                <br>
+              </div>
+          <div class="col-sm-8 text-left"> 
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+        <div class="cell border-box-sizing code_cell rendered">
+
+            <div class="output_wrapper">
+            <div class="output">
+            
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            <div class="output_text output_subarea ">
+                <div class="text_cell_render border-box-sizing rendered_html">
+                <h1>Processing Data</h1>
+            </div>
+            
+            <div class="output_markdown rendered_html output_subarea ">
+                <p>First step is, create a hash function to avoid the duplicate images which need to retrieve from different folders. Then, we packed these files to be pickle files.
+                    After organized all the pickle files, we also process the path into a directory. 
+                  </p>
+              
+              </div>
+            
+              <br>
+            <pre>{1551848557: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.01.19_2019_790000.pickle.zip&#39;,
+             1551848627: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.03.47_2019_810000.pickle&#39;,
+             1551849413: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.16.53_2019_all.pickle&#39;,
+             1551850193: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.16.53_2019_all.pickle.zip&#39;,
+             1551852012: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.00.12_2019_all.pickle&#39;,
+             1551852031: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.00.31_2019_all.pickle&#39;,
+             1551852345: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.05.45_2019_all.pickle&#39;}</pre>
+            </div>
+            
+            </div>
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            
+            <div class="output_markdown rendered_html output_subarea ">
+              <p>Since there are too many images from one writer, we arranged the files as below steps.
+                </p>
+            <p>Loading Img Hash Pickle for 2019 processed files</p>
+            
+            </div>
+            
+            </div>
+            
+            </div>
+            </div>
+            
+            </div>
+            <div class="cell border-box-sizing code_cell rendered">
+            
+            </div>
+            <div class="cell border-box-sizing code_cell rendered">
+            
+            <div class="output_wrapper">
+            <div class="output">
+            
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            <div class="output_subarea output_stream output_stdout output_text">
+            <pre>getting the object for test: 
+            </pre>
+            </div>
+            </div>
+            
+            </div>
+            </div>
+            
+            </div>
+            <div class="cell border-box-sizing code_cell rendered">
+            
+            <div class="output_wrapper">
+            <div class="output">
+            
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            
+            
+            <div class="output_text output_subarea ">
+            <pre>True</pre>
+            </div>
+            
+            </div>
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            
+            
+            <div class="output_text output_subarea ">
+            <pre>{&#39;file_path&#39;: &#39;../mnist/by_field/hsf_0/digit/30/30_00000.png&#39;,
+             &#39;char_label&#39;: &#39;30&#39;}</pre>
+            </div>
+            
+            </div>
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            <div class="output_markdown rendered_html output_subarea ">
+            <p>0</p>
+            
+            </div>
+            
+            </div>
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            
+            
+            <div class="output_text output_subarea ">
+            <pre>814244</pre>
+            </div>
+            
+            </div>
+            
+            </div>
+            </div>
+            
+            </div>
+            <div class="cell border-box-sizing code_cell rendered">
+            
+            <div class="output_wrapper">
+            <div class="output">
+            
+            
+            <div class="output_area">
+            
+                <div class="prompt"></div>
+            
+            
+            <div class="output_subarea output_stream output_stdout output_text">
+            <pre>store the char, img and label in different columns:
+            </pre>
+            </div>
+            </div>
+            
+            </div>
+            </div>
+            
+            </div>
 <div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-<div class="output_text output_subarea ">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h1>Processing Data</h1>
-</div>
-
-<div class="output_markdown rendered_html output_subarea ">
-    <p>First step is, create a hash function to avoid the duplicate images which need to retrieve from different folders. Then, we packed these files to be pickle files.
-        After organized all the pickle files, we also process the path into a directory. 
-      </p>
-  
-  </div>
-
-  <br>
-<pre>{1551848557: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.01.19_2019_790000.pickle.zip&#39;,
- 1551848627: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.03.47_2019_810000.pickle&#39;,
- 1551849413: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.16.53_2019_all.pickle&#39;,
- 1551850193: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_21.16.53_2019_all.pickle.zip&#39;,
- 1551852012: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.00.12_2019_all.pickle&#39;,
- 1551852031: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.00.31_2019_all.pickle&#39;,
- 1551852345: &#39;data/intermediate/hashes/by_field_openssl_sha1_Tue_Mar__5_22.05.45_2019_all.pickle&#39;}</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-  <p>Since there are too many images from one writer, we arranged the files as below steps.
-    </p>
-<p>Loading Img Hash Pickle for 2019 processed files</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>getting the object for test: 
-</pre>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
@@ -13238,6 +13328,22 @@ div#notebook {
 
     <div class="prompt"></div>
 
+
+
+
+<div class="output_text output_subarea ">
+<pre>{&#39;file_path&#39;: &#39;../mnist/by_field/hsf_0/digit/30/30_00000.png&#39;,
+ &#39;char_label&#39;: &#39;30&#39;}</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
 <div class="output_markdown rendered_html output_subarea ">
 <p>0</p>
 
@@ -13268,28 +13374,6 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>store the char, img and label in different columns:
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-  <img src="img/data_processing.gif" width="500">
 <div class="output_area">
 
     <div class="prompt"></div>
@@ -13329,12 +13413,32 @@ div#notebook {
 
 <div class="output_area">
 
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="img/data_processing.gif">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
     <div class="prompt"></div>
 
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Writer">Writer: 0000<a class="anchor-link" href="#Writer"></a></h2>
+<h2 id="Writer">Writer: id<a class="anchor-link" href="#Writer">&#182;</a></h2>
 </div>
 
 </div>
@@ -13343,19 +13447,14 @@ div#notebook {
 
     <div class="prompt"></div>
 
-
-
-
-
  
- 
-<div id="5d58a139-64c1-4f7d-8ca4-42cb32ebb49e"></div>
+<div id="206a6c05-7737-4902-840f-700d5620ba34"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#5d58a139-64c1-4f7d-8ca4-42cb32ebb49e');
+var element = $('#206a6c05-7737-4902-840f-700d5620ba34');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "fa19849094464d64b389d1136610bcc1", "version_major": 2, "version_minor": 0}
+{"model_id": "b2f4eee92a824ddf9747cdcf1d07d2de", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -13376,14 +13475,15 @@ var element = $('#5d58a139-64c1-4f7d-8ca4-42cb32ebb49e');
 <div class="output_area">
 
     <div class="prompt"></div>
+
  
-<div id="61301176-a170-4de7-ab36-3c11e0a48d5e"></div>
+<div id="bc5bc3f4-073f-4c4d-ab5d-b39d1fbb079f"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
+var element = $('#bc5bc3f4-073f-4c4d-ab5d-b39d1fbb079f');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "43521f07384f4548acc507d5b5e8d17e", "version_major": 2, "version_minor": 0}
+{"model_id": "b0e54a0748f54316a058b3198efe3f3a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -13392,8 +13492,6 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
 <div class="output_area">
 
     <div class="prompt"></div>
-
-
 
 
 <div class="output_png output_subarea ">
@@ -13513,41 +13611,17 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
   </div>
   </div>
   </div>
-
-  <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-  </div><div class="inner_cell">
-  </div>
-  </div>
 <div class="output_area">
 
     <div class="prompt"></div>
+
+
 
 <div class="output_markdown rendered_html output_subarea ">
 <p>Adding pandas row... <strong>writer</strong>: 0004 <strong>char_type</strong>:                                        u label: U</p>
 
 </div>
 
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>store the pixel with letter/number, writer id and type into data frame:
-</pre>
-</div>
 </div>
 
 </div>
@@ -13731,10 +13805,7 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
     </tr>
   </tbody>
 </table>
-<div class="output_subarea output_stream output_stdout output_text">
-  <pre>the shape of total data frame (1911, 16387)
-  </pre>
-  </div>
+<p>5 rows × 16387 columns</p>
 </div>
 </div>
 
@@ -13830,7 +13901,7 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>store as csv files: pixel.csv and image.csv
+<pre>the shape of total data frame (1911, 16387)
 </pre>
 </div>
 </div>
@@ -13845,14 +13916,19 @@ var element = $('#61301176-a170-4de7-ab36-3c11e0a48d5e');
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
     </div>
   </div>
+</div>
+</div>
+    </div>
+  <div>
+      <footer class="container-fluid text-center">
+          <p>&copy; Katie (Ziqi) Chen, Albert (Xiang) Li, Emily Ding, Kenneth Long | 2019</p>
+        </footer>
   </div>
-  </div>
-  </div>
-  <footer class="container-fluid text-center">
-      <p>&copy; Katie (Ziqi) Chen, Albert (Xiang) Li, Emily Ding, Kenneth Long | 2019</p>
-    </footer>
 </body>
 
  
