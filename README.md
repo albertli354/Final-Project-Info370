@@ -7,6 +7,8 @@ Albert Li | Katie Chen | Emily Ding | Kenneth long
 
 + [Project Resource](https://albertli354.github.io/Final-Project-Info370/)
 
++ [Project Paper](+ [Project Resource](https://albertli354.github.io/Final-Project-Info370/))
+
 ### Branches Description:
 
 + [master](https://github.com/albertli354/Final-Project-Info370) -- main page setting for polished website
