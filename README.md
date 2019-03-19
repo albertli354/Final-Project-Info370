@@ -7,7 +7,7 @@ Albert Li | Katie Chen | Emily Ding | Kenneth long
 
 + [Project Resource](https://albertli354.github.io/Final-Project-Info370/)
 
-+ [Project Paper]([Project Resource](https://albertli354.github.io/Final-Project-Info370/)
++ [Project Paper](https://github.com/albertli354/Final-Project-Info370/blob/master/INFO370%20Final%20Paper.pdf)
 
 ### Branches Description:
 
